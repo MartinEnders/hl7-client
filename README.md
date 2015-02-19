@@ -24,9 +24,9 @@ hl7-client:send returns a list with the HL7-acknowledges
 For testing purposes there is a function (hl7-client:get-hl7-test-message) which returns a HL7-Message with random message-ID.
 
 ```cl
-CL-USER> (hl7-client:SEND "srv-kom-dt1.srv.uk-erlangen.de" 24777 (hl7-client:get-hl7-test-message))
+CL-USER> (hl7-client:SEND "localhost" 24777 (hl7-client:get-hl7-test-message))
 ("MSH|^~\\&|Receiving-App^^|Receiving-Facility^^|Sending-App^^|Sending-Facility^^|20150101195400^||ACK|9089|P^|2.2^^|||||||^^^^^|^MMSA|AA|9089^M")
-CL-USER> (hl7-client:SEND "srv-kom-dt1.srv.uk-erlangen.de" 24777 (list (hl7-client:get-hl7-test-message) (hl7-client:get-hl7-test-message)))
+CL-USER> (hl7-client:SEND "localhost" 24777 (list (hl7-client:get-hl7-test-message) (hl7-client:get-hl7-test-message)))
 ("MSH|^~\\&|Receiving-App^^|Receiving-Facility^^|Sending-App^^|Sending-Facility^^|20150101195400^||ACK|1800|P^|2.2^^|||||||^^^^^|^MMSA|AA|1800^M"
  "MSH|^~\\&|Receiving-App^^|Receiving-Facility^^|Sending-App^^|Sending-Facility^^|20150101195400^||ACK|1309|P^|2.2^^|||||||^^^^^|^MMSA|AA|1309^M")
 CL-USER> 
