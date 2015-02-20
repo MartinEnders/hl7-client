@@ -6,6 +6,8 @@ The client sends HL7-Messages in MLLP evelopes to a TCP/IP socket and returns th
 
 There is no validation of messages or acknowledges done by the client so it will NOT stop when an NACK-Message occurs.
 
+## License
+http://opensource.org/licenses/BSD-3-Clause
 
 
 ## Usage
