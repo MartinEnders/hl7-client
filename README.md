@@ -49,7 +49,7 @@ Installable via Quicklisp:
 ## Development
 I developed and tested hl7-client on:
 * Debian GNU/Linux (jessie)
-* SBCL 1.1.15-x86-64
+* SBCL and CCL
 
 ## ToDo
 * 'with'-Macro for sending multiple messages within one connection
