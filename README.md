@@ -2,6 +2,14 @@
 
 Common-Lisp client for sending HL7-Messages with MLLP envelope over TCP/IP socket.
 
+> The HL7 Version 2 Messaging Standard — Application Protocol for Electronic
+> Data Exchange in Healthcare Environments — is considered to be the workhorse
+> of data exchange in healthcare and is the most widely implemented standard
+> for healthcare information in the world.
+
+Source: http://www.hl7.org/about/FAQs/index.cfm?ref=nav ("General HL7 FAQ" > "Version 2" > "What is Version 2?")
+
+
 The client sends HL7-Messages in MLLP evelopes to a TCP/IP socket and returns the acknowledges.
 
 There is no validation of messages or acknowledges done by the client so it will NOT stop when an NACK-Message occurs.
