@@ -17,6 +17,13 @@ There is no validation of messages or acknowledges done by the client so it will
 ## License
 http://opensource.org/licenses/BSD-3-Clause
 
+## Installation
+
+HL7-Client is 'quickloadable':
+```cl
+(ql:quickload "hl7-client")
+```
+
 
 ## Usage
 
